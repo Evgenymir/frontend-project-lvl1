@@ -4,4 +4,4 @@
 
 https://travis-ci.com/travis-ci/travis-web.svg?branch=master
 
-https://travis-ci.org/Evgenymir/frontend-project-lvl1.svg?branch=master
+[![Build Status](https://travis-ci.org/Evgenymir/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Evgenymir/frontend-project-lvl1)
