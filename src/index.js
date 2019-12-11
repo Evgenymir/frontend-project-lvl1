@@ -19,17 +19,18 @@ export const gameEven = () => {
     console.log('\n');
 
     const gameEvenBeginning = (counter = 0) => {
-        const questionNumber = `Question: ${randomNumber()}`;
-        console.log(questionNumber);
+        const questionNumber = randomNumber();
+        console.log(`Question: ${questionNumber}`);
 
         const userAnswer = readlineSync.question('Your answer: ');
         const correctAnswer = questionNumber % 2 === 0 ? 'yes' : 'no';
+        console.log(correctAnswer);
 
         if (counter === 2) {
             return console.log(`Congratulations, ${name}!`);
         }
 
-        if (userAnswer === correctAnswer) {
+        if (correctAnswer === userAnswer) {
             console.log('Correct!');
             return gameEvenBeginning(counter + 1);
         }
