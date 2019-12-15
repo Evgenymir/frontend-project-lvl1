@@ -6,4 +6,8 @@
 
 [![Build Status](https://travis-ci.org/Evgenymir/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Evgenymir/frontend-project-lvl1)
 
+## Добавление игры brain-even
 [![asciicast](https://asciinema.org/a/YV3BBI10cZbPwpyZ0o1Jy8H84.svg)](https://asciinema.org/a/YV3BBI10cZbPwpyZ0o1Jy8H84)
+
+## Добавление игры brain-calc
+[![asciicast](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS.svg)](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS)
