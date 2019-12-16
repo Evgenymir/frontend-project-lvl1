@@ -11,3 +11,6 @@
 
 ## Добавление игры brain-calc
 [![asciicast](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS.svg)](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS)
+
+## Добавление игры brain-gcd
+[![asciicast](https://asciinema.org/a/G1CCwyrQOrm6YDcfHdIUxeE2L.svg)](https://asciinema.org/a/G1CCwyrQOrm6YDcfHdIUxeE2L)
