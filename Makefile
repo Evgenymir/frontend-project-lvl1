@@ -15,3 +15,6 @@ brain-even:
 
 brain-calc:
 	npm run babel-node src/bin/brain-calc.js
+
+brain-gcd:
+	npm run babel-node src/bin/brain-gcd.js
