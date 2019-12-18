@@ -18,3 +18,6 @@ brain-calc:
 
 brain-gcd:
 	npm run babel-node src/bin/brain-gcd.js
+
+brain-progression:
+	npm run babel-node src/bin/brain-progression.js

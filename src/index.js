@@ -22,12 +22,12 @@ export const getUserName = () => {
 // Функция для запуска игр.
 export const startGame = (description, gameData) => {
     console.log('Welcome to the Brain Games!');
-    console.log('');
-    const name = getUserName();
-    console.log('');
-
     // Выведем описание игры
     console.log(description);
+    console.log('');
+
+    const name = getUserName();
+    console.log('');
 
     // Созаем рекурсивный цикл
     const gameCounter = (counter = 0) => {
