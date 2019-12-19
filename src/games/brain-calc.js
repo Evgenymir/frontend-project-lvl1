@@ -31,6 +31,8 @@ const gameCalc = () => {
 
     const question = `${numberOne} ${operand} ${numberTwo}`;
 
+    console.log(typeof correctAnswer);
+
     return pair(question, correctAnswer);
 };
 

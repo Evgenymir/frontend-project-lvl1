@@ -6,8 +6,11 @@
 
 [![Build Status](https://travis-ci.org/Evgenymir/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Evgenymir/frontend-project-lvl1)
 
+## Глобальная установка игры
+<script id="asciicast-QalRwAybcrSbfNkXfyupdlu1m" src="https://asciinema.org/a/QalRwAybcrSbfNkXfyupdlu1m.js" async></script>
+
 ## Игра brain-even
-[![asciicast](https://asciinema.org/a/YV3BBI10cZbPwpyZ0o1Jy8H84.svg)](https://asciinema.org/a/YV3BBI10cZbPwpyZ0o1Jy8H84)
+[![asciicast](https://asciinema.org/a/mh0QWI4BVgGS3vs0eskG46t80.svg)](https://asciinema.org/a/mh0QWI4BVgGS3vs0eskG46t80)
 
 ## Игра brain-calc
 [![asciicast](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS.svg)](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS)

@@ -33,7 +33,7 @@ export const startGame = (description, gameData) => {
     const gameCounter = (counter = 0) => {
         const data = gameData();
         const question = getQuestion(data);
-        const correctAnswer = getcorrectAnswer(data);
+        const correctAnswer = String(getcorrectAnswer(data));
 
         console.log(`Question: ${question}`);
 
