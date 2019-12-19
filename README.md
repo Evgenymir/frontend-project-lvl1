@@ -17,3 +17,6 @@
 
 ## Игра brain-progression
 [![asciicast](https://asciinema.org/a/tKXBHFo830aprFL2arbvu06Vh.svg)](https://asciinema.org/a/tKXBHFo830aprFL2arbvu06Vh)
+
+## Игра brain-prime
+[![asciicast](https://asciinema.org/a/nzCWc6Lg3asYYlkRFnEwFD4mp.svg)](https://asciinema.org/a/nzCWc6Lg3asYYlkRFnEwFD4mp)

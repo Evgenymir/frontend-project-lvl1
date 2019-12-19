@@ -15,7 +15,7 @@ const getcorrectAnswer = (data) => cdr(data);
 // Узнаем имя пользователя.
 export const getUserName = () => {
     const userName = readlineSync.question('May I have your name? ');
-    console.log(`Hi ${userName} !`);
+    console.log(`Hi ${userName}!`);
     return userName;
 };
 
