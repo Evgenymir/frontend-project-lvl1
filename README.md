@@ -7,19 +7,19 @@
 [![Build Status](https://travis-ci.org/Evgenymir/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Evgenymir/frontend-project-lvl1)
 
 ## Глобальная установка
-[![asciicast](https://asciinema.org/a/QalRwAybcrSbfNkXfyupdlu1m.svg)](https://asciinema.org/a/QalRwAybcrSbfNkXfyupdlu1m)
+[![asciicast](https://asciinema.org/a/df9o0Ssk8UjXAqKjqqkOgKfse.svg)](https://asciinema.org/a/df9o0Ssk8UjXAqKjqqkOgKfse)
 
 ## Игра brain-even
-[![asciicast](https://asciinema.org/a/YV3BBI10cZbPwpyZ0o1Jy8H84.svg)](https://asciinema.org/a/YV3BBI10cZbPwpyZ0o1Jy8H84)
+[![asciicast](https://asciinema.org/a/hBv6FiUyh6LkiCcMIfn3LGMlD.svg)](https://asciinema.org/a/hBv6FiUyh6LkiCcMIfn3LGMlD)
 
 ## Игра brain-calc
-[![asciicast](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS.svg)](https://asciinema.org/a/NNTjANNRRKvzAkacHnhWGegpS)
+[![asciicast](https://asciinema.org/a/t2PaYjjBNUif5JHMIU0XHYBSk.svg)](https://asciinema.org/a/t2PaYjjBNUif5JHMIU0XHYBSk)
 
 ## Игра brain-gcd
-[![asciicast](https://asciinema.org/a/G1CCwyrQOrm6YDcfHdIUxeE2L.svg)](https://asciinema.org/a/G1CCwyrQOrm6YDcfHdIUxeE2L)
+[![asciicast](https://asciinema.org/a/A3hIjGjLTNsbmhT0ALLnszUDc.svg)](https://asciinema.org/a/A3hIjGjLTNsbmhT0ALLnszUDc)
 
 ## Игра brain-progression
-[![asciicast](https://asciinema.org/a/tKXBHFo830aprFL2arbvu06Vh.svg)](https://asciinema.org/a/tKXBHFo830aprFL2arbvu06Vh)
+[![asciicast](https://asciinema.org/a/5ynxfMQC02V87cIiUzdCX5n41.svg)](https://asciinema.org/a/5ynxfMQC02V87cIiUzdCX5n41)
 
 ## Игра brain-prime
-[![asciicast](https://asciinema.org/a/nzCWc6Lg3asYYlkRFnEwFD4mp.svg)](https://asciinema.org/a/nzCWc6Lg3asYYlkRFnEwFD4mp)
+[![asciicast](https://asciinema.org/a/nQHPoVbzcQxMWjjeMmyKLj7f3.svg)](https://asciinema.org/a/nQHPoVbzcQxMWjjeMmyKLj7f3)
