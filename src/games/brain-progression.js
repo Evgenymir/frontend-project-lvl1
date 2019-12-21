@@ -6,7 +6,7 @@ const description = 'What number is missing in the progression?';
 // Создадим логику игры
 const gameProgression = () => {
     const startNumber = randomNumber(1, 20);
-    const multiplier = randomNumber(3, 10);
+    const multiplier = randomNumber(3, 6);
     const length = 10;
     const indexHideElement = randomNumber(1, 10);
     let result = '';

@@ -16,7 +16,7 @@ const isPrime = (num) => {
 
 // Создадим логику игры
 const gameProgression = () => {
-    const num = randomNumber(2, 40);
+    const num = randomNumber(2, 20);
 
     const correctAnswer = isPrime(num) === true ? 'yes' : 'no';
     const question = num;

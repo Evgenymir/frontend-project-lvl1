@@ -10,8 +10,8 @@ const gcd = (a, b) => {
 
 // Создадим логику игры
 const gameGcd = () => {
-    const numberOne = randomNumber(1, 100);
-    const numberTwo = randomNumber(1, 100);
+    const numberOne = randomNumber(1, 20);
+    const numberTwo = randomNumber(1, 20);
 
     const correctAnswer = `${gcd(numberOne, numberTwo)}`;
 

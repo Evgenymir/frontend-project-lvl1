@@ -5,8 +5,8 @@ const description = 'What is the result of the expression?';
 
 // Создадим логику игры
 const gameCalc = () => {
-    const numberOne = randomNumber(1, 20);
-    const numberTwo = randomNumber(1, 20);
+    const numberOne = randomNumber(1, 5);
+    const numberTwo = randomNumber(1, 5);
     const isOperandIndex = randomNumber(1, 4);
     let operand = '';
     let correctAnswer = '';

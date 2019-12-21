@@ -5,7 +5,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 // Создадим логику игры
 const gameEven = () => {
-    const question = randomNumber(1, 20);
+    const question = randomNumber(1, 10);
     const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
 
     return pair(question, correctAnswer);

@@ -33,14 +33,14 @@ export const startGame = (description, gameData) => {
     const gameCounter = (counter = 0) => {
         const data = gameData();
         const question = getQuestion(data);
-        const correctAnswer = String(getcorrectAnswer(data));
+        const correctAnswer = getcorrectAnswer(data);
 
         console.log(`Question: ${question}`);
 
         const userAnswer = readlineSync.question('Your answer: ');
 
         if (correctAnswer !== userAnswer) {
-            return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${name}!`);
+            return console.log(`'${userAnswer}' test is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${name}!`);
         }
 
         console.log('Correct!');
