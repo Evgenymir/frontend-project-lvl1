@@ -6,7 +6,7 @@ export const gameCalc = () => {
     const numberOne = randomNumber(1, 5);
     const numberTwo = randomNumber(1, 5);
     const operations = ['+', '-', '*'];
-    const indexOperation = randomNumber(1, operations.length - 1);
+    const indexOperation = randomNumber(0, operations.length - 1);
     let question = '';
     let correctAnswer = '';
 
