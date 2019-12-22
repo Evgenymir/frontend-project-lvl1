@@ -1,7 +1,6 @@
-import { randomNumber, pair, startGame } from '../index';
+import { randomNumber, pair } from '../index';
 
-// Создадим описание игры
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
     if (num === 2) return true;
@@ -14,8 +13,7 @@ const isPrime = (num) => {
     return true;
 };
 
-// Создадим логику игры
-const gameProgression = () => {
+export const gamePrime = () => {
     const num = randomNumber(2, 20);
 
     const correctAnswer = isPrime(num) === true ? 'yes' : 'no';
@@ -23,8 +21,3 @@ const gameProgression = () => {
 
     return pair(question, correctAnswer);
 };
-
-// Запишем в результат вызов игры из index.js с передачей данных
-const result = () => startGame(description, gameProgression);
-
-export default result;

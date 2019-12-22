@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import gameProgression from '../games/brain-progression';
+import { description, gameProgression } from '../games/brain-progression';
+import startGame from '../index';
 
-gameProgression();
+startGame(description, gameProgression);

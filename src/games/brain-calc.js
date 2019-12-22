@@ -1,40 +1,30 @@
-import { randomNumber, pair, startGame } from '../index';
+import { randomNumber, pair } from '../index';
 
-// Создадим описание игры
-const description = 'What is the result of the expression?';
+export const description = 'What is the result of the expression?';
 
-// Создадим логику игры
-const gameCalc = () => {
+export const gameCalc = () => {
     const numberOne = randomNumber(1, 5);
     const numberTwo = randomNumber(1, 5);
-    const isOperandIndex = randomNumber(1, 4);
-    let operand = '';
+    const index = randomNumber(1, 4);
+    let question = '';
     let correctAnswer = '';
 
-    if (isOperandIndex === 1) {
-        operand = '+';
-        const answer = numberOne + numberTwo;
-        correctAnswer = `${answer}`;
+    switch (index) {
+    case 1:
+        question = `${numberOne} + ${numberTwo}`;
+        correctAnswer = String(numberOne + numberTwo);
+        break;
+    case 2:
+        question = `${numberOne} - ${numberTwo}`;
+        correctAnswer = String(numberOne - numberTwo);
+        break;
+    case 3:
+        question = `${numberOne} * ${numberTwo}`;
+        correctAnswer = String(numberOne * numberTwo);
+        break;
+    default:
+        break;
     }
-
-    if (isOperandIndex === 2) {
-        operand = '-';
-        const answer = numberOne - numberTwo;
-        correctAnswer = `${answer}`;
-    }
-
-    if (isOperandIndex === 3) {
-        operand = '*';
-        const answer = numberOne * numberTwo;
-        correctAnswer = `${answer}`;
-    }
-
-    const question = `${numberOne} ${operand} ${numberTwo}`;
 
     return pair(question, correctAnswer);
 };
-
-// Запишем в результат вызов игры из index.js с передачей данных
-const result = () => startGame(description, gameCalc);
-
-export default result;

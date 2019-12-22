@@ -1,17 +1,15 @@
-import { randomNumber, pair, startGame } from '../index';
+import { randomNumber, pair } from '../index';
 
-// Создадим описание игры
-const description = 'What number is missing in the progression?';
+export const description = 'What number is missing in the progression?';
+const lengthProgression = 10;
 
-// Создадим логику игры
-const gameProgression = () => {
+export const gameProgression = () => {
     const startNumber = randomNumber(1, 20);
     const multiplier = randomNumber(3, 6);
-    const length = 10;
     const indexHideElement = randomNumber(1, 10);
     let result = '';
 
-    for (let i = 0; i <= length; i += 1) {
+    for (let i = 0; i <= lengthProgression; i += 1) {
         if (i === indexHideElement) {
             result += '.. ';
         } else {
@@ -24,8 +22,3 @@ const gameProgression = () => {
 
     return pair(question, correctAnswer);
 };
-
-// Запишем в результат вызов игры из index.js с передачей данных
-const result = () => startGame(description, gameProgression);
-
-export default result;
