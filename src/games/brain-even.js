@@ -1,12 +1,14 @@
-import startGame, { randomNumber, pair } from '../index';
+import startGame, { consData } from '../index';
+import randomNumber from '../utils';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isCorrectAnswer = (number) => number % 2 === 0;
 
-const gameEven = () => {
-    const question = randomNumber(1, 10);
-    const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
+const getGameDataEven = () => {
+  const question = randomNumber(1, 10);
+  const correctAnswer = isCorrectAnswer(question) ? 'yes' : 'no';
 
-    return pair(question, correctAnswer);
+  return consData(question, correctAnswer);
 };
 
-export default () => startGame(description, gameEven);
+export default () => startGame(description, getGameDataEven);

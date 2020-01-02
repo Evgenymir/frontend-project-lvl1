@@ -1,30 +1,31 @@
-import startGame, { randomNumber, pair } from '../index';
+import startGame, { consData } from '../index';
+import randomNumber from '../utils';
 
 const description = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
-const gameCalc = () => {
-    const numberOne = randomNumber(1, 5);
-    const numberTwo = randomNumber(1, 5);
-    const indexOperation = randomNumber(0, operations.length - 1);
-    const question = `${numberOne} ${operations[indexOperation]} ${numberTwo}`;
-    let correctAnswer = '';
+const getGameDataCalc = () => {
+  const numberOne = randomNumber(1, 5);
+  const numberTwo = randomNumber(1, 5);
+  const indexOperation = randomNumber(0, operations.length - 1);
+  const question = `${numberOne} ${operations[indexOperation]} ${numberTwo}`;
+  let correctAnswer = '';
 
-    switch (indexOperation) {
-    case 0:
-        correctAnswer = String(numberOne + numberTwo);
-        break;
-    case 1:
-        correctAnswer = String(numberOne - numberTwo);
-        break;
-    case 2:
-        correctAnswer = String(numberOne * numberTwo);
-        break;
+  switch (operations[indexOperation]) {
+    case operations[0]:
+      correctAnswer = String(numberOne + numberTwo);
+      break;
+    case operations[1]:
+      correctAnswer = String(numberOne - numberTwo);
+      break;
+    case operations[2]:
+      correctAnswer = String(numberOne * numberTwo);
+      break;
     default:
-        break;
-    }
+      break;
+  }
 
-    return pair(question, correctAnswer);
+  return consData(question, correctAnswer);
 };
 
-export default () => startGame(description, gameCalc);
+export default () => startGame(description, getGameDataCalc);
