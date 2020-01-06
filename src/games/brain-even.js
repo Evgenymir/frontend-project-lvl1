@@ -1,4 +1,4 @@
-import startGame, { consData } from '../index';
+import startGame, { getCons } from '../index';
 import randomNumber from '../utils';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -8,7 +8,7 @@ const getGameDataEven = () => {
   const question = randomNumber(1, 10);
   const correctAnswer = isCorrectAnswer(question) ? 'yes' : 'no';
 
-  return consData(question, correctAnswer);
+  return getCons(question, correctAnswer);
 };
 
 export default () => startGame(description, getGameDataEven);

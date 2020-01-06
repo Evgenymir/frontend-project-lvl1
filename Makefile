@@ -8,7 +8,7 @@ publish:
 	npm publish --dry-run
 
 lint:
-	npm run eslint src
+	npm run eslint .
 
 brain-even:
 	npm run babel-node src/bin/brain-even.js
