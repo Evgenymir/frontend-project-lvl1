@@ -1,30 +1,30 @@
-import startGame, { getCons } from '../index';
-import randomNumber from '../utils';
+import startGame from '../index';
+import randomNumber, { makeGameData } from '../utils';
 
 const description = 'What number is missing in the progression?';
-const maxNumberProgression = 10;
+const progressionLength = 10;
 
 const getGameDataProgression = () => {
-  const startNumber = randomNumber(1, 20);
+  const firstProgressionNumber = randomNumber(1, 20);
   const progressionStep = randomNumber(3, 6);
-  const hideNumberProgression = randomNumber(1, maxNumberProgression);
+  const progressionIndex = randomNumber(1, progressionLength);
   let question = '';
 
-  for (let i = 0; i <= maxNumberProgression; i += 1) {
-    if (i === hideNumberProgression) {
+  for (let i = 0; i <= progressionLength - 1; i += 1) {
+    if (i === progressionIndex) {
       question = `${question}.. `;
     } else {
-      const progressionNumber = startNumber + (progressionStep * (i - 1));
-      if (i === maxNumberProgression) {
+      const progressionNumber = firstProgressionNumber + (progressionStep * (i - 1));
+      if (i >= progressionLength - 1) {
         question = `${question}${progressionNumber}`;
       } else {
         question = `${question}${progressionNumber} `;
       }
     }
   }
-  const correctAnswer = String(startNumber + (progressionStep * (hideNumberProgression - 1)));
+  const correctAnswer = String(firstProgressionNumber + (progressionStep * (progressionIndex - 1)));
 
-  return getCons(question, correctAnswer);
+  return makeGameData(question, correctAnswer);
 };
 
 export default () => startGame(description, getGameDataProgression);

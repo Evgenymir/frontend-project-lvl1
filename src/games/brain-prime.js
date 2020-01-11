@@ -1,5 +1,5 @@
-import startGame, { getCons } from '../index';
-import randomNumber from '../utils';
+import startGame from '../index';
+import randomNumber, { makeGameData } from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -18,7 +18,7 @@ const getGameDataPrime = () => {
   const question = randomNumber(2, 20);
   const correctAnswer = isPrime(question) === true ? 'yes' : 'no';
 
-  return getCons(question, correctAnswer);
+  return makeGameData(question, correctAnswer);
 };
 
 export default () => startGame(description, getGameDataPrime);

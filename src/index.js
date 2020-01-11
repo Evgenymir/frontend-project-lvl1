@@ -1,10 +1,7 @@
 import readlineSync from 'readline-sync';
-import { cons, car, cdr } from '@hexlet/pairs';
+import { getQuestion, getCorrectAnswer } from './utils';
 
-export const getCons = (question, correctAnswer) => cons(question, correctAnswer);
-const getQuestion = (data) => car(data);
-const getCorrectAnswer = (data) => cdr(data);
-const maxNumberGames = 3;
+const gamesCount = 3;
 
 const startGame = (description, gameData) => {
   console.log('Welcome to the Brain Games!');
@@ -16,7 +13,7 @@ const startGame = (description, gameData) => {
   console.log('');
 
   const startGameCounter = (counter) => {
-    if (counter === maxNumberGames) {
+    if (counter === gamesCount) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }

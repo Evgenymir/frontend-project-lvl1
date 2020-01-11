@@ -1,5 +1,5 @@
-import startGame, { getCons } from '../index';
-import randomNumber from '../utils';
+import startGame from '../index';
+import randomNumber, { makeGameData } from '../utils';
 
 const description = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
@@ -25,7 +25,7 @@ const getGameDataCalc = () => {
       break;
   }
 
-  return getCons(question, correctAnswer);
+  return makeGameData(question, correctAnswer);
 };
 
 export default () => startGame(description, getGameDataCalc);

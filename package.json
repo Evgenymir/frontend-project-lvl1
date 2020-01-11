@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1-bespalov",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "project brain games",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",

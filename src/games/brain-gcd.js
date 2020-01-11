@@ -1,5 +1,5 @@
-import startGame, { getCons } from '../index';
-import randomNumber from '../utils';
+import startGame from '../index';
+import randomNumber, { makeGameData } from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -16,7 +16,7 @@ const getGameDataGcd = () => {
 
   const question = `${numberOne} ${numberTwo}`;
 
-  return getCons(question, correctAnswer);
+  return makeGameData(question, correctAnswer);
 };
 
 export default () => startGame(description, getGameDataGcd);
